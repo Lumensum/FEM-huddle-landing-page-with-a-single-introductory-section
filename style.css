@@ -1,30 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
 
 :root {
-    --clr-violet: hsl(257, 40%, 49%);
-    --clr-magenta: hsl(300, 69%, 71%);
+  --clr-violet: hsl(257, 40%, 49%);
+  --clr-magenta: hsl(300, 69%, 71%);
 
-    --ff-headings: 'Poppins', sans-serif;
-    --ff-body: 'Open Sans', sans-serif;
+  --ff-headings: "Poppins", sans-serif;
+  --ff-body: "Open Sans", sans-serif;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  background-color: red;
+  width: 46.875rem;
+  background: url(./images/bg-mobile.svg) center top no-repeat var(--clr-violet);
+  background-size: contain;
+}
+
+.logo {
+  height: 3.75rem;
+  width: auto;
+  margin: 4.5rem;
+}
+
+.image {
+  margin: 2.5rem 5rem;
+}
+
+.image img {
+  width: 37rem;
 }
 
 body {
-    font-family: var(--ff-body);
-    color: #FFFFFF;
+  font-family: var(--ff-body);
+  color: #ffffff;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
-    background: url(./images/bg-mobile.svg) center no-repeat var(--clr-violet);
-    width: 46.875rem;
+  width: 46.875rem;
 }
 
 .maintext__header {
-    font-family: var(--ff-headings);
+  font-family: var(--ff-headings);
+  font-size: 3rem;
+  text-align: center;
+  padding: 0rem 3.5rem;
+  margin-top: 8rem;
+}
+
+.maintext__description {
+  font-size: 2rem;
+  text-align: center;
+  padding: 0rem 4.25rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.button {
+  width: 25.25rem;
+  height: 5.125rem;
+  display: block;
+  background: white;
+  text-align: center;
+  border-radius: 5rem;
+  text-decoration: none;
+  color: var(--clr-violet);
+  font-size: 1.5rem;
+  padding: 1em;
+  font-family: var(--ff-headings);
+  margin: auto;
+  box-shadow: 0 0.25rem 1rem 0.1rem rgba(0, 0, 0, 0.25);
+}
+
+.button:hover {
+  background-color: var(--clr-magenta);
+  color: white;
+}
+
+footer {
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+  padding-top: 6.5rem;
+}
+
+footer a {
+  width: 3.5rem;
+  height: 3.5rem;
+  color: white;
+  border: 0.125rem white solid;
+  border-radius: 5rem;
+  text-align: center;
+  margin: auto;
+  padding: 0.4em;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+footer a:hover {
+  border-color: var(--clr-magenta);
+  color: var(--clr-magenta);
 }

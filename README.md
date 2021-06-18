@@ -33,7 +33,7 @@ These are screenshots of the finished product.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/huddle-landing-page-in-html-and-css-co8wOHMLC](https://www.frontendmentor.io/solutions/huddle-landing-page-in-html-and-css-co8wOHMLC)
 - Live Site URL: [https://lumensum.github.io/FEM-huddle-landing-page-with-a-single-introductory-section/](https://lumensum.github.io/FEM-huddle-landing-page-with-a-single-introductory-section/)
 
 ## My process

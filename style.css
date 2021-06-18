@@ -13,10 +13,34 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: peru;
+  font-family: var(--ff-body);
 }
 
 .container {
-  background-color: red;
+  background-color: yellow;
+  width: 90rem;
+  height: 50rem;
+  background: url(./images/bg-desktop.svg) center top no-repeat
+    var(--clr-violet);
+}
+
+.logo {
+  height: 3.25rem;
+  margin-top: 3.25rem;
+  margin-left: 4.5rem;
+}
+
+
+
+
+/* 
+.container {
+  background-color: salmon;
   width: 46.875rem;
   background: url(./images/bg-mobile.svg) center top no-repeat var(--clr-violet);
   background-size: contain;
@@ -47,6 +71,10 @@ body {
 
 main {
   width: 46.875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .maintext__header {
@@ -115,3 +143,69 @@ footer a:hover {
   border-color: var(--clr-magenta);
   color: var(--clr-magenta);
 }
+
+@media only screen and (min-width: 1340px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .container {
+    width: 87.5rem;
+    background: url(./images/bg-desktop.svg) center top no-repeat
+      var(--clr-violet);
+  }
+
+  .logo {
+    margin-bottom: 0;
+  }
+
+  .image img {
+    width: 44rem;
+    margin-right: 0;
+  }
+
+  main {
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+  }
+
+  .maintext__header {
+    font-size: 3rem;
+    text-align: left;
+    padding: 0rem 3.5rem 0 0;
+    margin-top: 0;
+  }
+
+  .maintext__description {
+    font-size: 1.25rem;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+
+  footer {
+    margin-top: -7rem;
+    margin-left: auto;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    padding-top: 7rem;
+  }
+
+  footer a {
+    width: 2.5rem;
+    height: 2.5rem;
+    color: white;
+    border: 0.125rem white solid;
+    border-radius: 5rem;
+    text-align: center;
+    margin: auto;
+    padding: 0.05em;
+    font-size: 1.5rem;
+    font-weight: 400;
+  } 
+  
+}*/
